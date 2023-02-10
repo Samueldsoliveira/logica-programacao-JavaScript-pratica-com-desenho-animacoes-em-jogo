@@ -1,7 +1,7 @@
 var tela = document.querySelector('canvas');
 var pincel = tela.getContext('2d'); //Uma API para desenhos geométricos
 
-pincel.fillStyle = 'lightgrey'; //Seleciona a cor do pincel
+pincel.fillStyle = 'darkgreen'; //Seleciona a cor do pincel
 pincel.fillRect(0, 0, 600, 400); //Seleciona o caminho em que o pincel irá preencher
 
 pincel.fillStyle = 'green';
