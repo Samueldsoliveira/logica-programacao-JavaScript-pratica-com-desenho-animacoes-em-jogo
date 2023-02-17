@@ -1,22 +1,19 @@
-var tela = document.querySelector('canvas');
-var pincel = tela.getContext('2d');
 
-function desenhaQuadradoVerde(){
+function desenhaQuadrado(x, y, cor){
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
 
-    pincel.fillStyle = 'green';
-    pincel.fillRect(0, 0, 50, 50);
-    pincel.fillRect(0, 0, 50, 50);
+    pincel.fillStyle = cor;
+    pincel.fillRect(x, y, 50, 50);
     pincel.fillStroke = 'black';
-    pincel.strokeRect(0, 0, 50, 50); //Faz um contorno
+    pincel.strokeRect(x, y, 50, 50); //Faz um contorno
     
-    pincel.fillRect(50, 0, 50, 50);
-    pincel.fillStroke = 'black';
-    pincel.strokeRect(50, 0, 50, 50);
-    
-    pincel.fillRect(100, 0, 50, 50);
-    pincel.fillStroke = 'black';
-    pincel.strokeRect(100, 0, 50, 50);
 }
+
+
+desenhaQuadrado(0, 0, 'green');
+desenhaQuadrado(50, 0, 'green');
+desenhaQuadrado(100, 0, 'green');
 
 
 
